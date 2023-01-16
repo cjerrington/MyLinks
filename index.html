@@ -1,0 +1,9 @@
+---
+layout: layout.html
+---
+
+{% for link in links %}
+				<div class="columns is-centered">
+					<div class="column is-half"><a class="button is-fullwidth is-rounded {{ link.style }}" href="{{ link.href }}">{{ link.name }}</a></div>
+				</div>
+{% endfor %}

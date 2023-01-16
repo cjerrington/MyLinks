@@ -1,0 +1,24 @@
+{
+  "name": "mylinks",
+  "version": "1.0.0",
+  "description": "simple page to display my links",
+  "main": "index.js",
+  "scripts": {
+    "serve": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "links",
+    "blog",
+    "html"
+  ],
+  "author": "Clayton Errington",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^0.9.4"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}
