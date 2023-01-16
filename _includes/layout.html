@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>{{ site.title }} - {{ site.name }}</title>
+		<base target="_blank">
+			<meta name="Description" content="{{ site.description }}"/>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+			{% for link in links %}
+			<link href="{{ link.href }}" rel="me">
+			{% endfor %}
+	</head>
+	<body>
+		<section class="hero is-medium is-info">
+			<div class="hero-body">
+				<div class="container">
+					<div class="columns">
+						<div class="column is-8-desktop is-offset-2-desktop">
+							<h1 class="title is-2 is-spaced">
+								{{ site.name }}
+							</h1>
+							<h2 class="subtitle is-4">
+								{{ site.description }}
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section">
+			<div class="container">
+				{{ content }}
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="content has-text-centered">
+				<p>
+					<strong>{{ site.title }}</strong> by <a href="{{ site.url }}">{{ site.name }}</a>.
+				</p>
+				<p>
+					<strong>My Links</strong> by <a href="https://claytonerrington.com">Clayton Errignton</a>. Create your own <a href="https://github.com/cjerrington/mylinks">My Links</a>.
+				</p>
+			</div>
+		</footer>
+		<script src="/assets/script.js"></script>
+	</body>
+</html>
